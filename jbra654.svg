@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 277">
+
+    <defs>
+        <clipPath id='cutout'>
+            <circle cx='40' cy='200' r='30' fill='red' />
+        </clipPath>
+        <mask id='lower-s-mask'>
+            <rect x="77" y="139.5" width="40" height="80" fill="white" stroke="white" />
+            <circle cx="77" cy="179.5" r="16.25" fill="black" />
+        </mask>
+        <mask id='upper-s-mask'>
+            <rect x="37" y="85" width="40" height="80" fill="white" stroke="white" />
+            <circle cx="80" cy="124" r="16.25" fill="black" />
+        </mask>
+        <mask id="piss-drop-mask">
+            <rect x="230" y="50" width="51" height="50" fill="white" stroke="white" />
+        </mask>
+    </defs>
+
+    <g id='S'>
+        <rect x='74' y='85' width="40" height="23" />
+        <rect x='40' y='195.5' width="40" height="23" />
+        <circle cx='77' cy='124' r='39' fill='black' mask='url(#upper-s-mask)' />
+        <circle cx='77' cy='179.5' r='39' fill='black' mask='url(#lower-s-mask)' />
+    </g>
+
+    <g id="H">
+        <rect x="131" y="82.5" width="22.5" height="138.5" />
+        <rect x="157" y="136.5" width="36" height="22.5" />
+        <rect x="192.5" y="82.5" width="22.5" height="138.5" />
+    </g>
+
+    <g id="I">
+        <rect x="231" y="82.5" width="30.5" height="138.5" />
+        <polygon points="231.5,49.5 261,49.5 246,12" fill="gold" stroke="gold" />
+        <circle cx="246.25" cy="51.5" r="15" fill="gold" mask="url(#piss-drop-mask)" stroke="gold" />
+    </g>
+
+    <g id="T">
+        <rect x="300" y="82.5" width="20" height="138.5" />
+        <rect x="323" y="82.5" width="31" height="23.25" />
+        <rect x="277.5" y="82.5" width="25" height="23.25" />
+    </g>
+
+    <text text-anchor="start" x='31' y='252' font-family="Verdana" font-size="12.25" font-weight="300"
+        textLength="338.5">
+        SOUTHERN HEMISPHERE INSTITUTE OF TECHNOLOGY
+    </text>
+</svg>
