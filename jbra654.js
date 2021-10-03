@@ -12,20 +12,20 @@ const getPieces = () => {
     streamPromise.then((data) => {
         let pieces = JSON.parse(data);
         pieces.forEach(displayPiss);
-        document.getElementById("array").innerText = pieces;
+        document.getElementById("array").innerText = `[${pieces}]`;
     });
 }
 
-const displayPiss = (data) => {
+const displayPiss = (data, index) => {
     let htmlString = ""; 
     for (let i = 0; i < parseInt(data); i++) {
         if (i % 2 == 0) {
-            htmlString += '<svg width="15" height="30"><use href="#sDrop" /></svg>';
+            htmlString += '<svg width="20" height="30"><use href="#sDrop" /></svg>';
         } else {
-            htmlString += '<svg width="15" height="30" transform="rotate(180)"><use href="#sDrop" /></svg>';
+            htmlString += '<svg width="20" height="30" transform="rotate(180)"><use href="#sDrop" /></svg>';
         };
     };
-    document.getElementById("pissTable").innerHTML += `<tr><td>${data}</td><td>${htmlString}</td></tr>`;
+    document.getElementById("pissTable").innerHTML += `<tr><td>${index+1}</td><td>${htmlString}</td></tr>`;
 }
 
 getIcon();

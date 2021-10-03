@@ -11,3 +11,7 @@ h3 {
 p {
     font-family: 'Courier New', Courier, monospace;
 }
+
+svg {
+    margin-right: -10px;
+}
